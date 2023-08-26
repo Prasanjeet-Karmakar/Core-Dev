@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(81, 244, 244, 0.434), rgb(16, 125, 203));
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    height: 80vh;
+    width: 60vw;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.header > h2 {
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.input-container {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.input-container > input {
+    min-width: 80%;
+    height: 35px;
+    padding: 4px;
+    margin-inline: 10px;
+}
+
+.input-container > button {
+    height: 35px;
+    width: 38px;
+    background-color: rgb(149, 19, 149);
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-weight: 700;
+    font-size: large;
+}
+
+.input-container > input:focus::placeholder {
+    color: transparent;
+}
+
+.todoLists {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.todoLists > li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+    margin-bottom: 6px;
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    padding: 10px 15px;
+    cursor: default;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.todoLists li .icon {
+    position: absolute;
+    left: 90%;
+    top: 50%;
+    transform: translateX(-10%) translateY(-50%);
+    background-color: #e74c3c;
+    width: 12%;
+    text-align: center;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer > button {
+    height: 35px;
+    width: fit-content;
+    background-color: rgb(149, 19, 149);
+    border: none;
+    border-radius: 2px;
+    color: white;
+    padding: 5px;
+}
