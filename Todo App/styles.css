@@ -89,11 +89,11 @@ body {
 
 .todoLists li .icon {
     position: absolute;
-    left: 90%;
+    left: 100%;
     top: 50%;
-    transform: translateX(-10%) translateY(-50%);
+    transform: translateX(-50px) translateY(-50%);
     background-color: #e74c3c;
-    width: 12%;
+    width: 50px;
     text-align: center;
     color: black;
     padding: 10px 15px;
